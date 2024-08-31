@@ -1,0 +1,9 @@
+• TypeScript 
+• Estruturar com SOLID e Clean Architecture. 
+• Componentização quando aplicável. 
+• Usar CSS Modules, styled-components, ou Tailwind CSS para estilos. 
+• Implementar Lazy Loading para componentes não essenciais e imagens,otimizando o desempenho da página. 
+• Utilizar Next.js Image Optimization para carregar imagens de forma otimizada. 
+* Configurar a aplicação para ser Server-Side Rendered (SSR) e Static Site Generated (SSG) onde apropriado. 
+• Incluir metadados adequados e tags de Open Graph para melhorar SEO e compartilhamento em redes sociais. 
+• Implementar responsividade para garantir que a aplicação seja perfeitamente utilizável em dispositivos móveis, tablets e desktops.
