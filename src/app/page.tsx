@@ -55,7 +55,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bottom-12 absolute">
-            <h3 className="text-sm">Follow me on</h3>
+            <h3 className="text-sm text-brand-white">Follow me on</h3>
             <div className="flex gap-3 mt-3">
               <Button className="bg-brand-white text-brand-primary px-2 hover:text-brand-white hover:bg-brand-sec ">
                 <BiBasketball size={20} />
