@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 const ServiceWork = () => {
     return ( 
         <>
-            <div className="w-[424px] h-[452px] flex-col rounded-md bg-brand-white">
+            <div className="flex-1  flex-col rounded-md bg-brand-white">
                 <div>
                     <Image src='/images/project1.png' alt="project1" className="object-contain" width={424} height={332}/>
                 </div>

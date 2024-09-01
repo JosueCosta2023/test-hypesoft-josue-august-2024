@@ -23,7 +23,7 @@ const Service = () => {
           </span>
           <BsArrowRight size={30} className="text-brand-primary group-hover:text-brand-secondary" />
         </Button>
-      </div>
+      </div> 
     </>
   );
 };

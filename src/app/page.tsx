@@ -12,7 +12,7 @@ import {
 } from "react-icons/bi";
 import CompanyLogo from "@/_components/company-logo";
 import { BsArrowRight } from "react-icons/bs";
-import { MailIcon, MapIcon, MapPin, Phone, StarIcon } from "lucide-react";
+import { MailIcon, MapPin, Phone, StarIcon } from "lucide-react";
 import CommentUser from "@/_components/comment-user";
 import Formulario from "@/_components/forms";
 import {
@@ -27,23 +27,25 @@ import { FaBluesky } from "react-icons/fa6";
 export default function Home() {
   return (
     <div className="relative ">
-      <div className="absolute bg-brand-sec w-[40%] h-[1080px] right-0 top-0 z-[-1]"></div>
+      <div className="absolute hidden lg:inline-block bg-brand-sec w-[40%] h-[1080px] right-0 top-0 z-[-1]"></div>
       <Header />
 
-      <div className="mx-auto flex justify-between w-[1320px] max-w-[100%] h-[974px]  mt-3">
-        <div className="relative">
-          <div className="absolute mt-60 w-[758px]">
-            <h2 className="text-7xl mb-3 text-brand-white">
+      <div className="mx-auto flex flex-col lg:flex-row justify-between items-center w-full max-w-[1320px] h-auto lg:h-[974px] mt-3 px-4 lg:px-0 relative">
+        <div className=" text-center lg:text-left">
+          <div className="mt-20 lg:mt-60 w-full max-w-[758px] mx-auto lg:mx-0 relative">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl mb-3 text-brand-white">
               Hello, I'm John, a
             </h2>
-            <span className="text-7xl text-brand-sec">Software Enginer</span>
-            <p className="text-xl mb-8 mt-8 w-[653px] text-brand-gray500">
+            <span className=" inline-block  text-4xl  md:text-5xl lg:text-7xl text-brand-sec">
+              Software Engineer
+            </span>
+            <p className="text-base md:text-lg lg:text-xl mb-8 mt-8 w-full max-w-[653px] mx-auto lg:mx-0 text-brand-gray500">
               Product Designer, UI/UX Designer, and developer based in Brazil.
               Over the past 17 years, as an art director and designer, I’ve
               worked with big companies and up-and-coming startups.
             </p>
 
-            <div className="flex gap-4 font-bold">
+            <div className="flex justify-center lg:justify-start gap-4 font-bold">
               <Button
                 children="Hire Me"
                 className="text-brand-primary bg-brand-white text-sm hover:text-brand-white hover:bg-brand-sec"
@@ -54,10 +56,11 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="bottom-12 absolute">
+
+          <div className="mt-[50px] lg:mt-[200px]">
             <h3 className="text-sm text-brand-white">Follow me on</h3>
-            <div className="flex gap-3 mt-3">
-              <Button className="bg-brand-white text-brand-primary px-2 hover:text-brand-white hover:bg-brand-sec ">
+            <div className="flex justify-center lg:justify-start gap-3 mt-3">
+              <Button className="bg-brand-white text-brand-primary px-2 hover:text-brand-white hover:bg-brand-sec">
                 <BiBasketball size={20} />
               </Button>
               <Button className="bg-brand-white text-brand-primary px-2 hover:text-brand-white hover:bg-brand-sec">
@@ -73,6 +76,7 @@ export default function Home() {
           </div>
         </div>
         <Image
+          className="hidden lg:inline-block right-0 top-0 absolute z-[-1]"
           src={"/images/perfil.png"}
           alt="Foto de perfil"
           width={870}
@@ -80,17 +84,20 @@ export default function Home() {
         />
       </div>
 
+      {/**Sobre nos */}
       <About />
 
+      {/**Meus serviços */}
       <section
         id="service"
-        className="mx-auto flex flex-col  items-center w-[1320px] max-w-[90%] h-[615px]  "
+        className="mx-auto flex flex-col  items-center w-[1320px] max-w-[90%] h-auto mb-8 "
       >
         <div className="flex flex-col items-center mb-[50px]">
           <h2 className="text-[40px] text-brand-white">My Service</h2>
           <span className="w-[80px] h-[3px] bg-brand-secondary"></span>
         </div>
-        <div className="h-[350px] w-full flex gap-6 justify-center">
+
+        <div className="w-full flex gap-6 justify-center flex-wrap">
           <Service />
           <Service />
           <Service />
@@ -98,6 +105,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/**Projetos */}
       <section
         id="project"
         className="mx-auto flex flex-col  items-center w-[1320px] max-w-[90%] mb-20"
@@ -107,8 +115,7 @@ export default function Home() {
           <span className="w-[80px] h-[3px] bg-brand-secondary"></span>
         </div>
         <div
-          className="w-full justify-center grid grid-cols-1 
-        sm:grid-cols-2  lg:grid-cols-3 gap-6"
+          className="w-full px-4 lg:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           <ServiceWork />
           <ServiceWork />
@@ -119,11 +126,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto flex  items-center justify-center w-[1320px] max-w-[90%] h-[320px]">
+
+      {/**Parceiros */}
+      <section className="mt-4 mx-auto flex flex-wrap items-center justify-center w-[1320px] max-w-[90%] gap-y-3">
         <CompanyLogo />
       </section>
 
-      <section className="mx-auto flex flex-col  items-center w-[1320px] max-w-[90%] h-[312px] mb-[180px] bg-[url('/images/shapes.svg')] justify-center">
+      {/**Publicidade */}
+      <section className="mt-8 mx-auto flex flex-col  items-center w-[1320px] max-w-[90%] h-[312px] mb-[80px] bg-[url('/images/shapes.svg')] justify-center">
         <h3 className="text-brand-white text-[32px] text-center">
           Got a project in mind? Let's make <br /> something awesome{" "}
           <span className="text-brand-secondary">together</span>.
@@ -134,6 +144,7 @@ export default function Home() {
         </Button>
       </section>
 
+      {/**Comentarios e avalizações */}
       <section className="mx-auto flex flex-col  items-center w-[1320px] max-w-[90%] h-[528px] mb-32 ">
         <div className="flex flex-col items-center mb-[30px]">
           <h2 className="text-[40px] text-brand-white">Testimonial</h2>
@@ -180,6 +191,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/**Sessão de contatos */}
       <section
         id="contact"
         className="relative mx-auto flex  items-center w-[1320px] max-w-[90%] h-[744px] mt-32 justify-between flex-wrap"
@@ -247,7 +259,7 @@ export default function Home() {
       </section>
 
       <footer className="flex justify-center items-center mt-[53px] mb-[216px]">
-        <Image src="/images/logo.png" width={263} height={59} alt="logo"/>
+        <Image src="/images/logo.png" width={263} height={59} alt="logo" />
       </footer>
     </div>
   );
