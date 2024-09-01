@@ -35,13 +35,13 @@ const Formulario = () => {
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="min-w-[564px] space-y-4 relative"
+        className="space-y-4 relative"
       >
         <h2 className="text-[32px] text-brand-primary mb-6">
           Let me Know here.
         </h2>
 
-        <div className="flex gap-3 w-full text-lg">
+        <div className="flex gap-3 w-full text-lg flex-col lg:flex-row">
           <div className="relative w-full">
             <input
               className="border-[1px] border-brand-gray100 rounded-sm px-2 w-full h-[40px]"

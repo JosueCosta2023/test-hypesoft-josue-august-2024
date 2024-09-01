@@ -7,8 +7,8 @@ const ServiceWork = () => {
     return ( 
         <>
             <div className="flex-1  flex-col rounded-md bg-brand-white">
-                <div>
-                    <Image src='/images/project1.png' alt="project1" className="object-contain" width={424} height={332}/>
+                <div className="relative w-full h-[332px]">
+                    <Image src='/images/project1.png' alt="project1"  layout="fill" />
                 </div>
                 <div className="text-brand-primary w-full p-6 group">
                     <p className="text-2xl">Eduguard - E-Learning Website</p>

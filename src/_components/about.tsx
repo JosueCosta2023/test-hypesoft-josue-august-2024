@@ -11,7 +11,7 @@ const About = () => {
     >
       {/** Image side */}
       <div className="w-full lg:w-[40%] h-auto lg:h-full flex justify-center items-center mb-8 lg:mb-0">
-        <div className="w-full mb-6 max-w-[560px] h-auto max-h-[100%] lg:mb-0">
+        <div className="w-full mb-6 max-w-[80%] md:w-[560px] h-auto max-h-[100%] lg:mb-0">
           <Image
             src="/images/softEngine.png"
             alt="Serviços"

@@ -55,7 +55,7 @@ const CompanyLogo = () => {
           />
         </div>
 
-        <div className="w-flex-1 h-[120px] bg-brand-white flex justify-center items-center rounded-md cursor-pointer">
+        <div className="w-flex-1 h-[120px] bg-brand-white flex justify-center items-center rounded-md cursor-pointer hover:text-brand-sec">
           <BsArrowRight size={48}/>
         </div>
       </div>

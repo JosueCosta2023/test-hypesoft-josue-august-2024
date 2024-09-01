@@ -145,13 +145,13 @@ export default function Home() {
       </section>
 
       {/**Comentarios e avalizações */}
-      <section className="mx-auto flex flex-col  items-center w-[1320px] max-w-[90%] h-[528px] mb-32 ">
+      <section className="mx-auto flex flex-col  items-center w-[1320px] max-w-[90%] h-[528px] mb-12 ">
         <div className="flex flex-col items-center mb-[30px]">
           <h2 className="text-[40px] text-brand-white">Testimonial</h2>
           <span className="w-[80px] h-[3px] bg-brand-secondary"></span>
         </div>
 
-        <div className="w-full flex justify-between h-[411px]">
+        <div className="w-full flex justify-center lg:justify-between h-[411px]">
           <div className="flex flex-col h-[100%] justify-between w-[312px]">
             <div className="w-full h-[100px] bg-brand-white p-6 rounded-sm">
               <CommentUser />
@@ -166,7 +166,7 @@ export default function Home() {
               <CommentUser />
             </div>
           </div>
-          <div className="h-[100%] max-w-[100%] w-[983px] relative">
+          <div className="hidden lg:inline-block h-[100%] max-w-[100%] w-[983px] relative">
             <div className="absolute z-30 right-6 top-6 flex gap-3">
               <Image src="/images/vector.svg" alt="" width={40} height={75} />
               <Image src="/images/vector.svg" alt="" width={40} height={75} />
@@ -179,7 +179,7 @@ export default function Home() {
                   5.0 Star Rating
                 </h3>
               </div>
-              <p className="text-[32px]">
+              <p className="text-[26px] :text-[32px]">
                 “If you're looking for someone who will challenge your UX/UI
                 thinking and really cut to the core of what's important for
                 users, then Jesse is your man. On top of that, he brings a level
@@ -194,14 +194,16 @@ export default function Home() {
       {/**Sessão de contatos */}
       <section
         id="contact"
-        className="relative mx-auto flex  items-center w-[1320px] max-w-[90%] h-[744px] mt-32 justify-between flex-wrap"
+        className="relative mx-auto flex  items-center w-[1320px] max-w-[90%] justify-center lg:justify-between flex-wrap"
       >
-        <div className="p-[48px] w-[760px] h-[536px] bg-brand-white rounded-md">
+        <div className="p-[48px] w-full 2xl:w-[760px] lg:h-[536px] bg-brand-white rounded-md">
           <Formulario />
         </div>
-        <div className="w-[536px] min-w-[536px] h-[536px] bg-brand-white rounded-md p-[48px]">
+
+        <div className=" hidden 2xl:inline-block lg:w-[536px] min-w-[536px] h-[536px] bg-brand-white rounded-md p-[48px]">
           <div className="flex flex-col space-y-6">
             <h3 className="text-[32px] font-bold">Get In Touch</h3>
+
             <div className="flex gap-5 items-center">
               <div className="w-[80px] h-[80px] flex justify-center items-center rounded-[50%] bg-brand-sec bg-opacity-10">
                 <MapPin size={32} className="text-brand-secondary" />
@@ -232,6 +234,7 @@ export default function Home() {
                 <p className="text-lg">+55 955 100 9449</p>
               </div>
             </div>
+
             <ul className="flex gap-5 items-center">
               <li className="w-[60px] h-[60px] rounded-full border-brand-gray100 border-[1px] flex items-center justify-center hover:bg-brand-sec hover:text-brand-white cursor-pointer">
                 <FaFacebook size={20} />
@@ -255,10 +258,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" absolute z-40 right-[-65px] top-[75px] w-[152px] h-[68px] bg-[url('/images/Dot.svg')] bg-cover bg-center"></div>
+        <div className="hidden 2xl:inline-block absolute z-40 right-[-65px] top-[75px] w-[152px] h-[68px] bg-[url('/images/Dot.svg')] bg-cover bg-center"></div>
       </section>
 
-      <footer className="flex justify-center items-center mt-[53px] mb-[216px]">
+      <footer className="flex justify-center items-center mt-[53px] mb-[116px]">
         <Image src="/images/logo.png" width={263} height={59} alt="logo" />
       </footer>
     </div>
