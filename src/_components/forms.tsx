@@ -23,12 +23,12 @@ const Formulario = () => {
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    console.log(data);
+
     reset();
     // Atualizar o estado para exibir a mensagem de confirmação
     setIsSubmitted(true);
 
-    // Opcional: Reiniciar o estado após alguns segundos
+    // Reiniciar o estado após alguns segundos
     setTimeout(() => setIsSubmitted(false), 3000); // A mensagem será exibida por 3 segundos
   };
   return (
