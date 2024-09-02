@@ -21,7 +21,7 @@ export default function RootLayout({
         <meta property="og:title" content="Josué Ocanha - Portfólio de Desenvolvedor" />
         <meta property="og:description" content="Portfólio de Josué Ocanha, desenvolvedor frontend e backend com experiência em tecnologias modernas como Node.js, React, TypeScript e mais." />
         <meta property="og:image" content="/public/pagina.png" />
-        <meta property="og:url" content="https://example.com/pagina" />
+        <meta property="og:url" content="http://localhost:3000" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Portfólio de Josué Ocanha" />
         <meta property="og:locale" content="pt_BR" />

@@ -17,7 +17,12 @@ const ServiceWork = ({serviceWork}: ServiceWorkProps) => {
         <>
             <div className="flex-1  flex-col rounded-md bg-brand-white">
                 <div className="relative w-full h-[332px]">
-                    <Image src={serviceWork.imagem} alt={serviceWork.titulo}  layout="fill" />
+                    <Image 
+                        src={serviceWork.imagem} 
+                        alt={serviceWork.titulo}  
+                        layout="fill" 
+                        objectFit="cover"
+                        />
                 </div>
                 <div className="text-brand-primary w-full p-6 group">
                     <p className="text-2xl">{serviceWork.empresa} - {serviceWork.titulo}</p>
