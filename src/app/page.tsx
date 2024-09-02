@@ -26,9 +26,8 @@ import { FaBluesky } from "react-icons/fa6";
 import { DATA } from "@/_utils/data.json";
 
 export default function Home() {
+  
   const fetchData = DATA;
-
-  console.log(fetchData.servicos);
 
   return (
     <div className="relative ">
