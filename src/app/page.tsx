@@ -141,6 +141,7 @@ export default function Home() {
           Hire me
           <BsArrowRight size={18} />
         </Button>
+
       </section>
 
       {/**Comentarios e avalizações */}
@@ -257,7 +258,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hidden 2xl:inline-block absolute z-40 right-[-65px] top-[75px] w-[152px] h-[68px] bg-[url('/images/Dot.svg')] bg-cover bg-center"></div>
+        <div className="hidden 2xl:inline-block absolute z-40 right-[-65px] top-[-25px] w-[152px] h-[68px] bg-[url('/images/Dot.svg')] bg-cover bg-center"></div>
       </section>
 
       <footer className="flex justify-center items-center mt-[53px] mb-[116px]">
