@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portifolio - SPA
+#### Este projeto é uma Single Page Application (SPA) desenvolvida para exibir um portfólio profissional. Aqui, você pode conhecer mais sobre o profissional, os serviços que ofereçe, alguns dos projetos, além de er acesso as redes sociais do profissional e conseguir entrar em contato diretamente atraves do formulario.
 
-## Getting Started
+## Funcionalidades
+### Sobre Mim
+Uma breve descrição sobre quem sou, minhas especialidades e áreas de atuação no desenvolvimento de software.
+### Serviços
+Apresentação dos principais serviços que ofereço, como desenvolvimento front-end, design de interfaces (UI/UX) e consultoria em tecnologia.
+### Projetos
+Exibição de alguns dos projetos que já realizei, com uma breve descrição e links para mais detalhes.
 
-First, run the development server:
+### Call to Action (CTA)
+Uma seção estratégica para captação de clientes, incentivando a entrar em contato para discutir possíveis colaborações ou projetos.
+### Portfólio para Contato
+Um formulário de contato para que visitantes possam me enviar uma mensagem diretamente, facilitando a comunicação.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como Rodar o Projeto Localmente
+### Clone o repositório:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    git clone https://github.com/JosueCosta2023/test-hypesoft-josue-august-2024.git
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Navegue até o diretório do projeto:
 
-## Learn More
+    cd seu-repositorio
+### Instale as dependências:
 
-To learn more about Next.js, take a look at the following resources:
+    npm install
+### Execute o projeto:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    npm run dev
+### Acesse no navegador:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    http://localhost:3000
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Estrutura de Pastas
+`/pages:` Contém as páginas do Next.js para a navegação da SPA.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`/components:` Componentes reutilizáveis da interface.
+
+`/styles:` Configurações e customizações do Tailwind CSS.
+
+`/public:` Imagens e outros arquivos estáticos.
+
+
+### Diretrizes 
+
+- Seja respeitoso e considerado com os outros.
+- Forneça feedback construtivo e esteja aberto a recebê-lo.
+- Respeite pontos de vista e experiências diferentes.
+
+## Author
+### Josué Ocanha Costa
+#### FullStack Developer
+#### Redes Sociais
+
+- Linkedin - [JosueOcanhaCosta](https://www.linkedin.com/in/josue-ocanha-costa/)
+- Github - [JosueCosta2023](https://github.com/JosueCosta2023)
+- Twitter - [@JosueOcanhaCosta](https://twitter.com/josue_ocanha)
+- Facebook - [JosueCosta](https://www.facebook.com/JosueOcanhaCosta2023)
+- Whatsapp - [Josue2023](https://wa.me/5565996408371?text=Ol%C3%A1%2C+encontrei+seu+whatsapp+no+Github.+Gostaria+de+falar+sobre+seus+projetos.)
+
+- Deploy do sistema - [FSW Barber](https://fsw-barber-2024-advd.vercel.app/)
+
+# "Vida longa e próspera. 🖖🖖🖖"
+
+Feito com o ❤️ por Josué Ocanha Costa
