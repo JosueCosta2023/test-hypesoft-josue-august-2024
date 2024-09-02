@@ -23,8 +23,13 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { FaBluesky } from "react-icons/fa6";
+import { DATA } from "@/_utils/data.json";
 
 export default function Home() {
+  const fetchData = DATA;
+
+  console.log(fetchData.servicos);
+
   return (
     <div className="relative ">
       <div className="absolute hidden lg:inline-block bg-brand-sec w-[40%] h-[1080px] right-0 top-0 z-[-1]"></div>
@@ -98,10 +103,9 @@ export default function Home() {
         </div>
 
         <div className="w-full flex gap-6 justify-center flex-wrap">
-          <Service />
-          <Service />
-          <Service />
-          <Service />
+          {fetchData.servicos.map((dados, index) => (
+            <Service key={index} service={dados} />
+          ))}
         </div>
       </section>
 
@@ -114,18 +118,13 @@ export default function Home() {
           <h2 className="text-[40px] text-brand-white">My Selected Work</h2>
           <span className="w-[80px] h-[3px] bg-brand-secondary"></span>
         </div>
-        <div
-          className="w-full px-4 lg:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          <ServiceWork />
-          <ServiceWork />
-          <ServiceWork />
-          <ServiceWork />
-          <ServiceWork />
-          <ServiceWork />
+        <div className="w-full px-4 lg:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {fetchData.projetos.map((dados, index) => (
+            <ServiceWork key={index} serviceWork={dados} />
+          ))}
+          
         </div>
       </section>
-
 
       {/**Parceiros */}
       <section className="mt-4 mx-auto flex flex-wrap items-center justify-center w-[1320px] max-w-[90%] gap-y-3">

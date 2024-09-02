@@ -1,0 +1,67 @@
+{
+    "DATA": {
+      "servicos": [
+        {
+          "icone": "/images/service1.svg",
+          "titulo": "UI/UX",
+          "categoria": "Design"
+        },
+        {
+          "icone": "/images/service2.svg",
+          "titulo": "Product",
+          "categoria": "Design"
+        },
+        {
+          "icone": "/images/service3.svg",
+          "titulo": "Branding",
+          "categoria": "Design"
+        },
+        {
+          "icone": "/images/service4.svg",
+          "titulo": "Front End",
+          "categoria": "Development"
+        }
+      ],
+
+      "projetos": [
+        {
+          "imagem": "/images/project1.png",
+          "empresa":"Eduguard",
+          "titulo": "E learning Website",
+          "link": "https://example.com/projeto1"
+        },
+        {
+          "imagem": "/images/project2.png",
+          "empresa":"Eduguard",
+          "titulo": "E learning Website",
+          "link": "https://example.com/projeto1"
+        },
+        {
+          "imagem": "/images/project3.png",
+          "empresa":"Huma",
+          "titulo": "Marketing Agency",
+          "link": "https://example.com/projeto1"
+        },
+        {
+          "imagem": "/images/project4.png",
+          "empresa":"Beeryblog",
+          "titulo": "Blog Website",
+          "link": "https://example.com/projeto1"
+        },
+        {
+          "imagem": "/images/project5.png",
+          "empresa":"Educare",
+          "titulo": "E learning website",
+          "link": "https://example.com/projeto1"
+        },
+        {
+          "imagem": "/images/project6.png",
+          "empresa":"Blogy",
+          "titulo": "Blog Website",
+          "link": "https://example.com/projeto1"
+        }
+        
+      ]
+    }
+  }
+  

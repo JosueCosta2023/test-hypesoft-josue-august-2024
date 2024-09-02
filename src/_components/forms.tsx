@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Button from "./buttons";
 import { SendIcon } from "lucide-react";
+import axios from "axios";
+
 
 interface IFormInput {
   firstName: string;
@@ -21,9 +23,9 @@ const Formulario = () => {
   } = useForm<IFormInput>();
 
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
-
-  const onSubmit: SubmitHandler<IFormInput> = (data) => {
-
+  
+  const onSubmit: SubmitHandler<IFormInput> = async (data) => {
+    
     reset();
     // Atualizar o estado para exibir a mensagem de confirmação
     setIsSubmitted(true);
@@ -31,6 +33,7 @@ const Formulario = () => {
     // Reiniciar o estado após alguns segundos
     setTimeout(() => setIsSubmitted(false), 3000); // A mensagem será exibida por 3 segundos
   };
+
   return (
     <>
       <form
