@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Button from "./buttons";
 import { SendIcon } from "lucide-react";
-import axios from "axios";
+
 
 
 interface IFormInput {
@@ -111,7 +111,7 @@ const Formulario = () => {
         </Button>
         {isSubmitted && (
           <div className="absolute top-[-100px] left-[300px] p-4 w-full bg-green-100 text-green-800 border border-green-300 rounded-md">
-            Your message has been sent successfully!
+            Mensagem enviada com sucesso!
           </div>
         )}
       </form>
